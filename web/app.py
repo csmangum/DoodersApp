@@ -1,11 +1,11 @@
-from flask import request, Flask
+from flask import request, Flask, render_template
 import json
+
 app = Flask(__name__)
 
-
 @app.route('/')
-def main():
-    return 'Hello World!'
+def index():
+    return render_template('index.html')
 
 
 @app.route('/plus_one')
