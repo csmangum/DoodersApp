@@ -3,6 +3,11 @@ import json
 app = Flask(__name__)
 
 
+@app.route('/')
+def main():
+    return 'Hello World!'
+
+
 @app.route('/plus_one')
 def plus_one():
     x = int(request.args.get('x', 1))
