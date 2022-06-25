@@ -6,7 +6,7 @@ def reload():
     if request.args.get('password') == 'stuffdude':
         try:
             os.system('git pull origin master')
-            return 'success dude'
+            return 'success'
         except:
             return 'fail'
     else:
