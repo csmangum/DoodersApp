@@ -5,7 +5,12 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+
+    if request.method == 'POST':
+        pass
+        
+    else:
+        return render_template('index.html')
 
 
 @app.route('/plus_one')
