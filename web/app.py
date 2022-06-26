@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
 
     if request.method == 'POST':
-        pass
+        return 'oh yeah baby'
         
     else:
         return render_template('index.html')
